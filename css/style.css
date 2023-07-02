@@ -207,6 +207,7 @@ nav{
     align-items: center;
     gap: 15px;
     row-gap: 39px;
+    overflow-x: visible;
 }
 
 .skill{
