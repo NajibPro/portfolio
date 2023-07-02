@@ -64,7 +64,6 @@ nav{
     font-weight: 600;
     z-index: 100;
     background-color: white;
-    overflow-y: hidden;
     -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
 }
@@ -73,14 +72,15 @@ nav{
     gap: 39px;
     width: fit-content;
     font-weight: 450;
-
+    transition: all 0.3s ease;
 }
 
 .nav-writings p{
     cursor: pointer;
 }
 
-.nav-writings p:hover{
+.nav-writings p:hover,
+.colored{
     color: var(--primary-color);
 }
 
@@ -515,7 +515,7 @@ nav{
 @media screen and (max-width: 870px){
     .nav-writings{
         position: absolute;
-        left: calc(100% - max(45%, 200px));
+        left: calc(100%);
         top: 90px;
         flex-direction: column;
         justify-content: flex-start;
@@ -524,7 +524,10 @@ nav{
         width: 45%;
         min-width: 200px;
         background-color: white;
-        visibility: hidden;
+        z-index: 200;
+        -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+        padding-top: 20px;
     }
 
     .nav-writings > p{
@@ -585,4 +588,8 @@ nav{
     .event-tags-bar{
         flex-wrap: wrap;
     }
+}
+
+.nav-visible{
+    left: calc(100% - max(45%, 200px));
 }
