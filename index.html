@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Najib's portfolio</title>
 </head>
 <body>
@@ -24,7 +25,7 @@
     </nav>
 
 
-    <div class="hero-section">
+    <div class="hero-section" data-aos="fade-right">
         <div class="greetings">
             <div class="welcoming-words">Hi, I'm Najib,<br> Frontend Developer</div>
             <div class="about-me-text">
@@ -42,9 +43,9 @@
 
 
     <div class="services-section">
-        <div class="section-title">My Services</div>
+        <div class="section-title" data-aos="fade-right">My Services</div>
         <div class="services-list">
-            <div class="service-box">
+            <div class="service-box" data-aos="fade-left">
                 <div class="service-logo"></div>
                 <div class="service-writings">
                     <div class="service-title">Web Development</div>
@@ -58,7 +59,7 @@
                 </div>
             </div>
     
-            <div class="service-box">
+            <div class="service-box" data-aos="fade-left">
                 <div class="service-logo"></div>
                 <div class="service-writings">
                     <div class="service-title">Web Development</div>
@@ -77,9 +78,9 @@
 
 
     <div class="skills-section">
-        <div class="section-title">My Skills</div>
+        <div class="section-title" data-aos="fade-right">My Skills</div>
 
-        <div class="skills-list">
+        <div class="skills-list" data-aos="fade-left">
             <div class="skill"><div class="skill-pic"></div></div>
             <div class="skill"><div class="skill-pic"></div></div>
             <div class="skill"><div class="skill-pic"></div></div>
@@ -99,8 +100,8 @@
 
 
     <div class="events-section">
-        <div class="section-title">Events</div>
-        <div class="event">
+        <div class="section-title" data-aos="fade-right">Events</div>
+        <div class="event" data-aos="fade-left">
             <div class="event-pic"></div>
 
             <div class="event-info">
@@ -120,7 +121,7 @@
 
         </div>
 
-        <div class="event">
+        <div class="event" data-aos="fade-left">
             <div class="event-pic"></div>
 
             <div class="event-info">
@@ -139,7 +140,7 @@
             </div>
         </div>
 
-        <div class="event">
+        <div class="event" data-aos="fade-left">
             <div class="event-pic"></div>
 
             <div class="event-info">
@@ -158,7 +159,7 @@
             </div>
         </div>
 
-        <div class="event">
+        <div class="event" data-aos="fade-left">
             <div class="event-pic"></div>
 
             <div class="event-info">
@@ -177,7 +178,7 @@
             </div>
         </div>
 
-        <div class="event">
+        <div class="event" data-aos="fade-left">
             <div class="event-pic"></div>
 
             <div class="event-info">
@@ -196,7 +197,7 @@
             </div>
         </div>
 
-        <div class="event">
+        <div class="event" data-aos="fade-left">
             <div class="event-pic"></div>
 
             <div class="event-info">
@@ -277,14 +278,14 @@
 
 
     <div class="contact-section">
-        <div class="section-title">Contact Me</div>
-        <form class="contact-form">
+        <div class="section-title" data-aos="fade-right">Contact Me</div>
+        <form class="contact-form" data-aos="fade-left">
             <input type="text" name="user-name" id="user-name" class="user-name" placeholder="Your Name">
             <input type="email" name="user-email" id="user-email" class="user-email" placeholder="Your Email">
             <textarea type="text" name="user-msg" id="user-msg" class="user-msg" placeholder="Your Message"></textarea>
             <button class="send-me-a-message">Send me a message</button>
         </form>
-        <div class="contact-info">
+        <div class="contact-info" data-aos="fade-left">
             <div class="other-info">
                 <div class="phone">
                     <div class="phone-logo"></div>
@@ -317,6 +318,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 </html>

@@ -14,11 +14,11 @@ document.addEventListener('click', function (event) {
     }
 });
 
-  var scrollToTop = document.querySelector(".nav-writings > p:nth-child(1)");
-  var scrollToServices = document.querySelector(".nav-writings > p:nth-child(2)");
-  var scrollToSkills = document.querySelector(".nav-writings > p:nth-child(3)");
-  var scrollToEvents = document.querySelector(".nav-writings > p:nth-child(4)");
-  var scrollToContact = document.querySelector(".nav-writings > p:nth-child(5)")
+  let scrollToTop = document.querySelector(".nav-writings > p:nth-child(1)");
+  let scrollToServices = document.querySelector(".nav-writings > p:nth-child(2)");
+  let scrollToSkills = document.querySelector(".nav-writings > p:nth-child(3)");
+  let scrollToEvents = document.querySelector(".nav-writings > p:nth-child(4)");
+  let scrollToContact = document.querySelector(".nav-writings > p:nth-child(5)")
 
   let homeSection = document.querySelector('.hero-section')
   let servicesSection = document.querySelector('.services-section')
